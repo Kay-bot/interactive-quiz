@@ -1,4 +1,4 @@
-const correctAnswers = ["B", "B", "B", "B"];
+const correctAnswers = ["C", "C", "A", "C", "C"];
 const form = document.querySelector(".quiz-form");
 const result = document.querySelector(".result");
 
@@ -15,7 +15,7 @@ form.addEventListener("submit", (e) => {
 
   userAnswers.forEach((answer, index) => {
     if (answer === correctAnswers[index]) {
-      score += 25;
+      score += 20;
     }
   });
   scrollTo(0, 0);
